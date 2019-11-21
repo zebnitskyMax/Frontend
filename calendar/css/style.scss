@@ -1,0 +1,164 @@
+$color-red:#EE3E5D;
+$color-pink:#F7B8CB;
+$color-blue:#255B65;
+$color-grey:#B3B4BA;
+$color-light_pink:#FEEFDC;
+$color-grey_dark:#575453;
+$font-header: 'Roboto Condensed',
+sans-serif;
+
+body {
+    font-family: sans-serif;
+}
+
+.header-space {
+    background: $color-light_pink;
+    /*  overflow: hidden; */
+    //чтобы в блоке при работе с float все не разваливалось не съезжалось
+    padding: 10px;
+    margin-bottom: 30px;
+
+    .layout {
+        display: flex; // альтернатива float
+        align-items: center; //flex box центрирование
+    }
+
+    .site-name {
+        margin: 11px 0 0 20px;
+    }
+
+    .share-calendar {
+        margin-left: auto;
+    }
+
+    .web-social {
+        margin-top: 15px;
+    }
+}
+
+
+
+.main-button {
+    background: $color-red;
+    color: $color-pink;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 2px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+
+}
+
+/* .share-calendar {
+    float: right;
+
+} */
+
+.site-name {
+    color: $color-blue;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* float: left; */
+
+    .title {
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 5px;
+
+    }
+
+    .description {
+        font-size: 16px;
+        margin-top: 0px;
+    }
+}
+
+.main-logo {
+    .image {
+        width: 95px;
+        /*   float: left; */
+
+    }
+}
+
+.web-social {
+    text-align: center;
+}
+
+/* .clear{
+    clear: none;
+} */
+// если использовать float и блоки разъезжаются 
+
+.list-down {
+
+    .label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .dropdown {
+        padding: 5px;
+        border: 1px solid $color-grey;
+        border-radius: 5px;
+    }
+
+}
+
+.single-calendar {
+    color: darken($color: $color-grey, $amount: 45);
+
+
+    .monthname {
+        text-align: center;
+        font-family: $font-header;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .calendr {
+        border: 1px solid #79878D;
+        border-radius: 10px;
+        padding: 15px 10px;
+        width: 270px;
+        margin-top: 50px;
+
+
+        /*   .weekdays {
+            line-height: 40px;
+        } */
+
+        .dayname {
+            color: darken($color: $color-grey, $amount: 25);
+            font-weight: normal;
+            text-align: center;
+            padding-bottom: 7px;
+
+            /*  &:last-child {
+                color: seagreen;
+            } */
+
+        }
+
+        .daynumber {
+            padding: 15px 5px 15px 5px;
+            text-align: center;
+            /* &:last-child {
+                color: seagreen;
+            } */
+        }
+        .daynumber:hover{
+            background: springgreen;
+            cursor: pointer;
+        }
+
+        .daynumber:last-child,
+        .dayname:last-child {
+            color: $color-red;
+        }
+    }
+}
+
+._container {
+    max-width: 960px;
+    margin: 0 auto;
+}

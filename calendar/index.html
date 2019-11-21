@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script> <!-- подключение иконок соц сетей -->
+    <script src="https://yastatic.net/share2/share.js"></script> <!-- подключение иконок соц сетей -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Calendary</title>
+</head>
+
+<body>
+    <div class="header-space">
+        <div class="_container">
+            <div class="layout">
+                <div class="main-logo">
+                    <img src="img/calendary3.png" class="image" alt="">
+                </div>
+                <div class="site-name">
+                    <h2 class="title">Calendary</h2>
+                    <p class="description">Select color, add month, to click need number</p>
+                </div>
+                <div class="share-calendar">
+                    <a class="main-button" href="#">Save</a>
+                    <div class="web-social">
+                        <div class="ya-share2" data-services="vkontakte,facebook,telegram" data-size="s">
+                            <!--  <p>web social</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="clear"></div> -->
+    <!-- если использовать float и блоки разъезжаются  -->
+
+    <div class="_container">
+        <div class="layout">
+            <div class="list-down">
+                <p class="label">Actual color</p>
+                <select class="dropdown">
+                    <option value="red">Red</option>
+                    <option value="blue">blue</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </div>
+            <div class="calendary-list">
+                <div class="single-calendar">
+                    <table class="calendr">
+                            <caption class="monthname">Juniary</caption>
+                        <tr class="weekdays">
+                            <th class="dayname">Mon</th>
+                            <th class="dayname">Tue</th>
+                            <th class="dayname">Wed</th>
+                            <th class="dayname">Thu</th>
+                            <th class="dayname">Fri</th>
+                            <th class="dayname">Sut</th>
+                            <th class="dayname">Sun</th>
+                        </tr>
+                        <tr class="week">
+                            <td class="daynumber">1</td>
+                            <td class="daynumber">3</td>
+                            <td class="daynumber">4</td>
+                            <td class="daynumber">2</td>
+                            <td class="daynumber">5</td>
+                            <td class="daynumber">6</td>
+                            <td class="daynumber">7</td>
+                        </tr>
+                        <tr class="week">
+                            <td class="daynumber">8</td>
+                            <td class="daynumber">9</td>
+                            <td class="daynumber">10</td>
+                            <td class="daynumber">11</td>
+                            <td class="daynumber">12</td>
+                            <td class="daynumber">13</td>
+                            <td class="daynumber">14</td>
+                        </tr>
+                        <tr class="week">
+                            <td class="daynumber">15</td>
+                            <td class="daynumber">16</td>
+                            <td class="daynumber">17</td>
+                            <td class="daynumber">18</td>
+                            <td class="daynumber">19</td>
+                            <td class="daynumber">20</td>
+                            <td class="daynumber">21</td>
+                        </tr>
+                        <tr class="week">
+                            <td class="daynumber">22</td>
+                            <td class="daynumber">23</td>
+                            <td class="daynumber">24</td>
+                            <td class="daynumber">25</td>
+                            <td class="daynumber">26</td>
+                            <td class="daynumber">27</td>
+                            <td class="daynumber">28</td>
+                        </tr>
+                        <tr class="week">
+                            <td class="daynumber">29</td>
+                            <td class="daynumber">30</td>
+                            <td class="daynumber">31</td>
+                            <td class="daynumber"></td>
+                            <td class="daynumber"></td>
+                            <td class="daynumber"></td>
+                            <td class="daynumber"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
