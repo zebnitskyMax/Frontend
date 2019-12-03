@@ -1,0 +1,76 @@
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.shadow {
+    display: none;
+}
+
+.wrapper {
+    background: #000 url(../img/radar3.jpg) center center no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-size: contain;
+    position: relative;
+}
+
+#idbtn {
+    display: block;
+    background: red;
+    font-size: 18px;
+    border-radius: 25%;
+    margin: 0 auto;
+}
+
+.contain {
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    width: 440px;
+    height: 440px;
+    border: 2px solid white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#ulbox {
+    margin: 0;
+    padding: 0;
+}
+
+#ulbox li {
+    color: rgb(230, 230, 137);
+    
+}
+
+.box {
+    margin: 0;
+    padding: 0;
+
+}
+
+.libox {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    display: inline-block; /* при изменении размера шривта li смещаются относительно ul */
+    font-size: 11px;
+    vertical-align: top; /* снимает проблему со смещением li относительно ul из-зи display: inline-block; */
+}
+#ship{
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    background: url(../img/ship2.png) center center no-repeat;
+    background-size: contain;
+
+}
