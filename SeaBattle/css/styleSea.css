@@ -65,12 +65,22 @@ html {
     font-size: 11px;
     vertical-align: top; /* снимает проблему со смещением li относительно ul из-зи display: inline-block; */
 }
-#ship{
+
+#aside{
     margin: 8px;
     width: 40px;
     height: 40px;
+    display: inline-block;
+   /*  position: absolute; */
+}
+
+#ship{
+    margin: 8px;
+    width: 35px;
+    height: 35px;
     border: 1px solid white;
     background: url(../img/ship2.png) center center no-repeat;
     background-size: contain;
+    display: inline-block;
 
 }
