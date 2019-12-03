@@ -1,0 +1,59 @@
+$color_backPanel: rgb(149, 44, 170);
+$color_button: rgb(58, 130, 197);
+
+body {
+    background: grey;
+    padding: 0;
+    margin: 0;
+    user-select: none; // you can't highlight symbols
+
+    .wrapper {
+        margin: 10px;
+        width: 316px;
+        padding: 1px;
+    }
+
+    .text {
+        width: 100%;
+        height: 45px;
+        border: none;
+        padding: 0;
+    }
+
+    .button {
+        margin-top: 1px;
+        padding: 0 auto;
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .button_equl {
+        width: 188px;
+        height: 60px;
+    }
+
+    .form_button {
+        width: 100%;
+    }
+
+    .button_c {
+        width: 124px;
+        height: 60px;
+    }
+}
+
+.button {
+    font-weight: bold;
+    cursor: pointer;
+    background: $color_button;
+    border-radius: 5px;
+}
+
+.wrapper {
+    background: $color_backPanel;
+}
+
+.text {
+    font-size: 24px;
+}
