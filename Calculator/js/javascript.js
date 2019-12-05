@@ -1,16 +1,21 @@
-/* function contant() {
-    var val = document.getElementsByClassName('button').value;
-    document.getElementsByClassName('text').innerHTML = val;
-} */
-function sign(num) {
-    var divide = document.getElementById('divide').value;
-    var text = document.getElementById('text');
-    text.innerHTML = divide;
-    var something;
-    document.getElementById('11') = something;
-    something.innerHTML = "fuck"
-
+function insert(num) {
+    /* document.form.textview.value =  document.form.textview.value + num; */
+    document.getElementById('input').value = document.getElementById('input').value + num;
+    
 }
-var a = 3;
-console.log(a);
 
+function clean() {
+    document.getElementById('input').value = "";
+}
+
+function back() {
+    var exp = document.getElementById('input').value;
+    document.getElementById('input').value = exp.substring(0, exp.length - 1);
+}
+function equal() {
+    var exp = document.getElementById('input').value;
+    if (exp) {
+        document.getElementById('input').value = eval(exp);
+       
+    }
+}

@@ -12,38 +12,35 @@
 
 <body>
     <div class="wrapper">
-        <form action="" class="form_text">
-            <input type="text" id="text" class="text" name="textview" readonly>
+        <form class="form" id="form"> <!-- //name="form" -->
+            <input type="text" class="textview" id="input"  value=""> <!--  name="textview" -->
         </form>
-        <form action="" class="form_button">
-            <input class="button" id="divide" onclick=sign(num) type="button" value="&divide;">
-            <input class="button" type="button" value="&times;">
-            <input class="button" type="button" value="&radic;">
-            <input class="button" type="button" onclick="sign('+')" value="+">
-            <input class="button" type="button" value="-">
-            <input class="button" type="button" value="%">
-            <input class="button" type="button" value="7">
-            <input class="button" type="button" value="8">
-            <input class="button" type="button" value="9">
-            <input class="button" type="button" value="(">
-            <input class="button" type="button" value="&larr;">
-            <input class="button" type="button" value="4">
-            <input class="button" type="button" value="5">
-            <input class="button" type="button" value="6">
-            <input class="button" type="button" value=")">
-            <input class="button button_c" type="button" value="C">
-            <input class="button" type="button" value="1">
-            <input class="button" type="button" value="2">
-            <input class="button" type="button" value="3">
-            <input class="button button_equl" type="button" value="=">
-            <input class="button" type="button" value="0">
-            <input class="button" type="button" value=".">
-            <div id="11" onmouseover="some()">
-                "hello"
-            </div>
-        </form>
+        <div class="form_button">
+            <input class="button" type="button" onclick="insert('/')" value="&divide;">
+            <input class="button" type="button" onclick="insert('*')" value="&times;">
+            <input class="button math-squar" type="button" onclick="insert('&radic;')" value="&radic;">
+            <input class="button" type="button" onclick="insert('+')" value="+">
+            <input class="button" type="button" onclick="insert('-')" value="-">
+            <input class="button" type="button" onclick="insert('%')" value="%">
+            <input class="button" type="button" onclick="insert('7')" value="7">
+            <input class="button" type="button" onclick="insert('8')" value="8">
+            <input class="button" type="button" onclick="insert('9')" value="9">
+            <input class="button" type="button" onclick="insert('(')" value="(">
+            <input class="button" type="button" onclick="back()" value="&larr;">
+            <input class="button" type="button" onclick="insert('4')" value="4">
+            <input class="button" type="button" onclick="insert('5')" value="5">
+            <input class="button" type="button" onclick="insert('6')" value="6">
+            <input class="button" type="button" onclick="insert(')')" value=")">
+            <input class="button button_c" type="button" onclick="clean()" value="C">
+            <input class="button" type="button"onclick="insert('1')"  value="1">
+            <input class="button" type="button" onclick="insert('2')" value="2">
+            <input class="button" type="button" onclick="insert('3')" value="3">
+            <input class="button button_equl" type="button" onclick="equal()" value="=">
+            <input class="button" type="button" onclick="insert('0')" value="0">
+            <input class="button" type="button" onclick="insert('.')" value=".">
+        </div>
+
     </div>
-    <!-- <script src="js/javascript.js"></script> -->
 </body>
 
 </html>
