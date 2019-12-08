@@ -19,3 +19,12 @@ function equal() {
        
     }
 }
+function sqrtExpres(){
+  var y = document.getElementById('input').value;
+  var variab =  Math.sqrt(y);
+    console.log(variab);
+document.getElementById('input').value = variab;
+    
+}
+/* sqrtExpres(4);
+sqrtExpres(25); */
